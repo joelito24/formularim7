@@ -1,5 +1,7 @@
 <?php
 include 'partials/header.tpl.php';
+//Set_cookie
+
 ?>
 
 <!-- FORMULARIO DE REGISTRO -->
@@ -13,14 +15,10 @@ include 'partials/header.tpl.php';
     include 'partials/nav.tpl.php';
     ?>
     <div class="container-form">
-        <form action="login" method="POST">
+        <form action="?url=regaction" method="POST">
             <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellido" required>
+                <label for="nombre">username</label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="username" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
@@ -35,7 +33,7 @@ include 'partials/header.tpl.php';
                 <input type="password" name="password2" id="password2" class="form-control" placeholder="Repetir Password" required>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary">Register</button>
             </div>
         </form>
     </div>

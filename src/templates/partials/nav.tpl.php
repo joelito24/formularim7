@@ -1,10 +1,9 @@
 <nav>
-        <?php if(isset($_SESSION['user'])): ?>
             <div>
-                <a href="/login">Login</a>
-                <a href="/dashboard">Dashboard</a>
-                <a href="/logout"><?= $_SESSION['user']->username ?> (Logout)</a>
-                <?php endif; ?>
-                <a href="/register">Register</a>
+                <a href="?url=login">Login</a>
+                <a href="?url=register">Register</a>
+                <a href="/loginform">Home</a>
+                <a href="?url=detail">Detail</a>
+                <a href="?url=logout">Logout</a>
             </div>
 </nav>

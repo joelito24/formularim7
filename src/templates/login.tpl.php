@@ -2,6 +2,8 @@
 
 include 'partials/header.tpl.php';
 
+
+
 ?>
 
 <!-- FORMULARIO DE LOGIN -->
@@ -14,10 +16,14 @@ include 'partials/header.tpl.php';
     <?php
     include 'partials/nav.tpl.php';
     ?>
+    
+
+    <!-- Guardar los loggins en la base de datos -->
+
     <div class="container-form">
-        <form action="login" method="POST">
+        <form action="?url=logaction" method="POST" class="form">
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="username">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
             </div>
             <div class="form-group">
@@ -29,6 +35,9 @@ include 'partials/header.tpl.php';
             </div>
         </form>
     </div>
+
+
+
 
 
 

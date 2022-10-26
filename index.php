@@ -8,6 +8,8 @@ session_start();
 require 'config.php';   
 require 'src\router.php';
 require 'src\routes.php';
+require 'src\db.php';
+
 
 
 
@@ -23,7 +25,6 @@ require 'src/controllers/'.$controlador.'.php';
 
 
 //llamada a la vista
-
 
 
 ?>
